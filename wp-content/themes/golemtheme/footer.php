@@ -48,7 +48,7 @@ wp_footer();
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Afrikaresor
+                        <i class="fas fa-gem me-3"></i>Afrikaresor.se
                     </h6>
                     <p>
                         Vi på Afrikaresor.se brinner för Afrika. Vi hoppas att du kommer trivas i Afrika.
@@ -60,19 +60,19 @@ wp_footer();
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        Products
+                        Resekategorier
                     </h6>
                     <p>
-                        <a href="#!" class="text-reset">Angular</a>
+                        <a href="#!" class="text-reset">Nordafrika</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">React</a>
+                        <a href="#!" class="text-reset">Västafrika</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Vue</a>
+                        <a href="#!" class="text-reset">Östafrika</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Laravel</a>
+                        <a href="#!" class="text-reset">Centralafrika</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -81,19 +81,19 @@ wp_footer();
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        Useful links
+                        Länkar
                     </h6>
                     <p>
-                        <a href="#!" class="text-reset">Pricing</a>
+                        <a href="#!" class="text-reset">Priser</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Settings</a>
+                        <a href="#!" class="text-reset">Inställningar</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Orders</a>
+                        <a href="#!" class="text-reset">Ordrar</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Help</a>
+                        <a href="#!" class="text-reset">Hjälp</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -102,7 +102,7 @@ wp_footer();
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        Contact
+                        Kontakt
                     </h6>
                     <p><i class="fas fa-home me-3"></i> Ankeborg, 214 21, SE</p>
                     <p>

@@ -42,13 +42,13 @@ get_header();
                 the_post();
         ?>
                 <div class="card-item">
-                    <h2><?php echo the_title(); ?></h2>
+
                     <div class="card-item-image">
-                        <?php
-                        preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
+                        <?php preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
                         /** $matches is an array, $matches[0] holds the img code */
                         echo $matches[0]; ?>
                     </div>
+                    <div><h2><?php echo the_title(); ?></h2></div>
                     <div>
                         <h5 class="font-weight-bold mt-2"><?php
                                                     the_excerpt();
