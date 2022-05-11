@@ -1,12 +1,76 @@
 @import '~bootstrap/scss/bootstrap';
 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
 #header-box {
-    background-image: url("/wp-content/themes/golemtheme/assets/images/africa-bg.jpg");
-    background-color: #cccccc;
-    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("/wp-content/themes/golemtheme/assets/images/africa-bg.jpg");
+    height: 110vh;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+
+#header-box h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 40px;
+    text-shadow: 3px 3px solid rgb(176, 176, 176);
+}
+
+.wp-block-image {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+#search-box {
+    background-color: rgb(190, 190, 190);
+}
+
+#header-box h1 {
+    font-style: bold;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 1px 1px rgb(184, 184, 184);
+}
+
 .cards-box {
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-item {
+    width: 30%;
+    margin: 20px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.card-item > img {
+    max-width: 200px;
+}
+
+.newsletter-box {
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    color: green;
+}
+
+.radios {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.single-image {
+    max-width: 90%;
 }
