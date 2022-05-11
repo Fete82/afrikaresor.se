@@ -49,10 +49,6 @@
     
 }
 
-.card-item > img {
-    max-width: 200px;
-}
-
 .newsletter-box {
     background-color: rgb(190, 190, 190);
     text-align: center;
@@ -67,10 +63,13 @@
 }
 
 .single-container {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 .single-image {
-    max-width: 90%;
 }

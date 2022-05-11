@@ -5,23 +5,23 @@ get_header();
 
 ?>
 <div class="p-5 text-center" id="header-box">
-        <!-- Header/title -->
-        <h1 class="display-1 mb-4 mt-5 text-light">
-            <?php
-            $site_name = get_bloginfo('name');
+    <!-- Header/title -->
+    <h1 class="display-1 mb-4 mt-5 text-light">
+        <?php
+        $site_name = get_bloginfo('name');
 
-            echo $site_name;
-            ?>
-        </h1>
-        <!-- Header/tagline -->
-        <h2 class="display-3 mb-5 mt-3 text-light">
-            <?php
-            $bloginfo = get_bloginfo('description');
-            echo $bloginfo;
-            ?>
-        </h2>
-        <a class="btn btn-success btn-lg mt-5 px-5 py-3" href="" role="button">Hitta din drömresa</a>
-    </div>
+        echo $site_name;
+        ?>
+    </h1>
+    <!-- Header/tagline -->
+    <h2 class="display-3 mb-5 mt-3 text-light">
+        <?php
+        $bloginfo = get_bloginfo('description');
+        echo $bloginfo;
+        ?>
+    </h2>
+    <a class="btn btn-success btn-lg mt-5 px-5 py-3" href="" role="button">Hitta din drömresa</a>
+</div>
 <div class="p-4 text-center">
     <button type="button" class="btn btn-success btn-lg m-4 px-5">Västafrika</button>
     <button type="button" class="btn btn-success btn-lg m-4 px-5">Centralafrika</button>
@@ -35,7 +35,7 @@ get_header();
     </div>
 </div>
 <article class="content px-3 py-5 p-md-5">
-    <div class="cards-box">
+    <div class="cards-box my-3">
         <?php
         if (have_posts()) {
             while (have_posts()) {
@@ -43,14 +43,20 @@ get_header();
         ?>
                 <div class="card-item">
                     <h2><?php echo the_title(); ?></h2>
-                    <?php
-                    preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
+                    <div class="card-item-image">
+                        <?php
+                        preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
                         /** $matches is an array, $matches[0] holds the img code */
-                        echo $matches[0];
-                    //the_content();
-                    the_excerpt();
-                ?>
-                    <a href="/../<?php echo the_title();?>">Mer info</a>
+                        echo $matches[0]; ?>
+                    </div>
+                    <div>
+                        <h5 class="font-weight-bold mt-2"><?php
+                                                    the_excerpt();
+                                                    ?></h5>
+                    </div>
+                    <div>
+                        <a class="my-3" href="/../<?php echo the_title(); ?>">Mer info</a>
+                    </div>
                 </div>
         <?php
             }
@@ -62,13 +68,16 @@ get_header();
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="<?php echo get_theme_file_uri('/assets/images/africa-4.jpg') ?>" height="900px" width="auto" class="d-block w-100" alt="...">
+            <img src="<?php echo get_theme_file_uri('/assets/images/africa-4.jpg') ?>" height="800px" width="auto" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="<?php echo get_theme_file_uri('/assets/images/africa-5.jpg') ?>" height="900px" width="auto" class="d-block w-100" alt="...">
+            <img src="<?php echo get_theme_file_uri('/assets/images/africa-5.jpg') ?>" height="800px" width="auto" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="<?php echo get_theme_file_uri('/assets/images/africa-6.jpg') ?>" height="900px" width="auto" class="d-block w-100" alt="...">
+            <img src="<?php echo get_theme_file_uri('/assets/images/africa-6.jpg') ?>" height="800px" width="auto" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="<?php echo get_theme_file_uri('/assets/images/africa-7.jpg') ?>" height="800px" width="auto" class="d-block w-100" alt="...">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
