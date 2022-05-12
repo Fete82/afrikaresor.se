@@ -6,7 +6,7 @@ get_header();
 ?>
 <div class="p-5 text-center" id="header-box">
     <!-- Header/title -->
-    <h1 class="display-1 mb-4 mt-5 text-light">
+    <h1 class="display-1 mb-3 mt-5 text-light">
         <?php
         $site_name = get_bloginfo('name');
 
@@ -34,7 +34,7 @@ get_header();
         <button type="button" class="btn btn-outline-success">Sök</button>
     </div>
 </div>
-<article class="content px-3 py-5 p-md-5">
+<div class="content px-3 py-5 p-md-5">
     <div class="cards-box my-3">
         <?php
         if (have_posts()) {
@@ -53,7 +53,7 @@ get_header();
                             <h2><?php echo the_title(); ?></h2>
                         </div>
                         <div>
-                            <h5 class="font-weight-bold mt-2"><?php
+                            <h5 class="font-weight-bold mt-3"><?php
                                                                 the_excerpt();
                                                                 ?></h5>
                         </div>
@@ -67,8 +67,7 @@ get_header();
         }
         ?>
     </div>
-    </div>
-</article>
+</div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
