@@ -48,14 +48,18 @@ get_header();
                         /** $matches is an array, $matches[0] holds the img code */
                         echo $matches[0]; ?>
                     </div>
-                    <div><h2><?php echo the_title(); ?></h2></div>
-                    <div>
-                        <h5 class="font-weight-bold mt-2"><?php
-                                                    the_excerpt();
-                                                    ?></h5>
-                    </div>
-                    <div>
-                        <a class="my-3" href="/../<?php echo the_title(); ?>">Mer info</a>
+                    <div class="card-item-info">
+                        <div>
+                            <h2><?php echo the_title(); ?></h2>
+                        </div>
+                        <div>
+                            <h5 class="font-weight-bold mt-2"><?php
+                                                                the_excerpt();
+                                                                ?></h5>
+                        </div>
+                        <div>
+                            <a class="my-3" href="/../<?php echo the_title(); ?>">Mer info</a>
+                        </div>
                     </div>
                 </div>
         <?php
