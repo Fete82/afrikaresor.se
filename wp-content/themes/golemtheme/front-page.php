@@ -46,6 +46,7 @@ get_header();
                     <div class="card-item-image">
                         <?php preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
                         /** $matches is an array, $matches[0] holds the img code */
+                        /** CHECK activating FEATURED IMAGE- THUMBNAIL instead of preg_match*/
                         echo $matches[0]; ?>
                     </div>
                     <div class="card-item-info">
