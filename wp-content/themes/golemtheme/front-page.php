@@ -40,6 +40,7 @@ get_header();
         if (have_posts()) {
             while (have_posts()) {
                 the_post();
+
         ?>
                 <div class="card-item">
 
@@ -127,10 +128,36 @@ get_header();
         <button type="button" class="btn btn-outline-success">Prenumerera</button>
     </div>
 </div>
-
+<!-- CUSTOM POSETS -->
+<div class="content px-3 py-2 p-md-2">
+    <div class="cards-box my-3">
+        <?php
+        query_posts(array(
+            'post_type' => 'ar_travels'
+        )); ?>
+        <?php
+        while (have_posts()) : the_post(); ?>
+            <div class="card-item">
+                <div class="card-item-image">
+                    <!-- image here -->
+                </div>
+                <div class="card-item-info">
+                    <div>
+                        <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                    </div>
+                    <div>
+                        <h5 class="font-weight-bold mt-3"> <?php the_excerpt(); ?></h5>
+                    </div>
+                </div>
+            </div>
+        <?php endwhile; ?>
+    </div>
 </div>
-<?php
-get_footer();
-?>
+
+<div>
+    <?php
+    get_footer();
+    ?>
+</div>
 
 </html>

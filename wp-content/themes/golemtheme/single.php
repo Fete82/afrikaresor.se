@@ -9,7 +9,8 @@ get_header();
 
 
             <div class="single-image">
-                <?php preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
+                <?php 
+                preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
                 /** $matches is an array, $matches[0] holds the img code */
                 echo $matches[0]; ?>
             </div>
