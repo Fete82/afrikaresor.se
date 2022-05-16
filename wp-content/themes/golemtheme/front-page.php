@@ -129,7 +129,7 @@ get_header();
     </div>
 </div>
 <!-- CUSTOM POSETS -->
-<div class="content px-3 py-2 p-md-2">
+<div class="content px-3 py-5 p-md-5">
     <div class="cards-box my-3">
         <?php
         query_posts(array(
@@ -140,6 +140,7 @@ get_header();
             <div class="card-item">
                 <div class="card-item-image">
                     <!-- image here -->
+                    <?php the_post_thumbnail('thumbnail') ?>
                 </div>
                 <div class="card-item-info">
                     <div>
@@ -151,6 +152,13 @@ get_header();
                 </div>
             </div>
         <?php endwhile; ?>
+    </div>
+</div>
+<div class="content px-3 py-5 p-md-5">
+    <div class="cards-box my-3">
+        <?php
+        art_list_travels();
+        ?>
     </div>
 </div>
 
