@@ -10,9 +10,8 @@ get_header();
 
             <div class="single-image">
                 <?php 
-                preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
-                /** $matches is an array, $matches[0] holds the img code */
-                echo $matches[0]; ?>
+                the_post_thumbnail('large');?>
+
             </div>
             <div class="mt-5">
                 <h1 class="display-3 font-weight-bold"><?php echo the_title(); ?></h1>
@@ -20,7 +19,7 @@ get_header();
             <div>
                 <!-- Get description only -->
                 <p class="display-6">
-                    <?php echo wp_strip_all_tags(get_the_content()); ?>
+                    <?php the_content(); ?>
                 </p>
             </div>
             <div>

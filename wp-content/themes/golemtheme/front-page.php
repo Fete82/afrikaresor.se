@@ -34,42 +34,15 @@ get_header();
         <button type="button" class="btn btn-outline-success">Sök</button>
     </div>
 </div>
+
 <div class="content px-3 py-5 p-md-5">
     <div class="cards-box my-3">
         <?php
-        if (have_posts()) {
-            while (have_posts()) {
-                the_post();
-
-        ?>
-                <div class="card-item">
-
-                    <div class="card-item-image">
-                        <?php preg_match("#<img(.+?)src=(.+?)\/>#", $post->post_content, $matches);
-                        /** $matches is an array, $matches[0] holds the img code */
-                        /** CHECK activating FEATURED IMAGE- THUMBNAIL instead of preg_match*/
-                        echo $matches[0]; ?>
-                    </div>
-                    <div class="card-item-info">
-                        <div>
-                            <h2><?php echo the_title(); ?></h2>
-                        </div>
-                        <div>
-                            <h5 class="font-weight-bold mt-3"><?php
-                                                                the_excerpt();
-                                                                ?></h5>
-                        </div>
-                        <div>
-                            <a class="my-3" href="/../<?php echo the_title(); ?>">Mer info</a>
-                        </div>
-                    </div>
-                </div>
-        <?php
-            }
-        }
+        art_list_travels();
         ?>
     </div>
 </div>
+
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">

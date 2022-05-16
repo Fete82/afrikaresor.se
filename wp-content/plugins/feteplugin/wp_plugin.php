@@ -61,9 +61,10 @@ function cw_post_type_ar_travels()
 add_action('init', 'cw_post_type_ar_travels');
 
 
-
+add_shortcode('list_travels', 'art_list_travels');
 function art_list_travels($atts = [], $content = null)
 {
+    
     $the_query = new WP_Query( array(
         'post_type' => 'ar_travels'
     ));    
@@ -94,4 +95,3 @@ function art_list_travels($atts = [], $content = null)
     endif;
     wp_reset_postdata();
 }
-add_shortcode('list_travels', 'art_list_travels');
