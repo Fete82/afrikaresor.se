@@ -59,16 +59,17 @@ function cw_post_type_ar_travels()
     register_post_type('ar_travels', $args);
 }
 add_action('init', 'cw_post_type_ar_travels');
-/*Custom Post type end*/
 
-// [bartag foo="foo-value"]
 
 
 function art_list_travels($atts = [], $content = null)
 {
-    if (have_posts()) :
+    $the_query = new WP_Query( array(
+        'post_type' => 'ar_travels'
+    ));    
+    if ($the_query->have_posts()) :
 
-        while (have_posts()) : the_post();
+        while ($the_query->have_posts()) : $the_query->the_post();
 
             ?>
             <div class="card-item">
@@ -91,5 +92,6 @@ function art_list_travels($atts = [], $content = null)
         <p>Sorry no posts matched your criteria.</p>
 <?php
     endif;
+    wp_reset_postdata();
 }
 add_shortcode('list_travels', 'art_list_travels');
