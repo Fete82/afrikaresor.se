@@ -22,22 +22,22 @@ get_header();
                     <p class="display-5">
                         <?php the_content(); ?>
                     </p>
-                    <p>
+                    <div>
+                        <button type="button" class="my-5 btn btn-success btn-lg">Boka resa nu</button>
+                    </div>
+                    <div class="comments-field">
                         <?php $args = array(
                             'post_id' => 0,   // Use post_id, not post_ID
                             'count'   => true // Return only the count
                         );
                         $comments_count = get_comments($args);
                         ?>
-                    <H3><?php echo $comments_count; ?> comments:</H2>
-                        <?php comments_template('/comments.php'); ?>
-                        <?php /* Calling just comments_template() is also fine */ ?>
-                        </p>
+                        <H3><?php echo $comments_count; ?> people have recommended this journey:</H2>
+                            <?php comments_template('/comments.php'); ?>
+                    </div>
                 </div>
             </div>
-            <div>
-                <button type="button" class="my-5 btn btn-success btn-lg">Boka resa nu</button>
-            </div>
+
 
 </div>
 
