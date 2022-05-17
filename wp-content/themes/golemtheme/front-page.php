@@ -20,7 +20,7 @@ get_header();
         echo $bloginfo;
         ?>
     </h2>
-    <a class="btn btn-success btn-lg mt-5 px-5 py-3" href="" role="button">Hitta din drömresa</a>
+    <a class="btn btn-success btn-lg mt-5 px-5 py-3" href="#travel" role="button">Hitta din drömresa</a>
 </div>
 <div class="p-4 text-center">
     <button type="button" class="btn btn-success btn-lg m-4 px-5">Västafrika</button>
@@ -35,7 +35,7 @@ get_header();
     </div>
 </div>
 
-<div class="content px-3 py-5 p-md-5">
+<div class="content px-3 py-5 p-md-5" id="travel">
     <div class="cards-box my-3">
         <?php
         art_list_travels();
