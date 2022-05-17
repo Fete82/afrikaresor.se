@@ -29,6 +29,7 @@ get_header();
 
                         <H3>See what others say about this destination:</H2>
                             <?php comments_template('/comments.php'); ?>
+                            <?php comment_form(); ?>
                     </div>
                 </div>
             </div>

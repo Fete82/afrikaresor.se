@@ -101,27 +101,7 @@ get_header();
         <button type="button" class="btn btn-outline-success">Prenumerera</button>
     </div>
 </div>
-<!-- CUSTOM POSTS -->
-<?php
-/*
-query_posts(array(
-            'post_type' => 'ar_travels'
-        ));
-*/
-?>
 
-
-
-<?php
-
-?>
-<div class="content px-3 py-5 p-md-5">
-    <div class="cards-box my-3">
-        <?php
-        art_list_travels();
-        ?>
-    </div>
-</div>
 
 <div>
     <?php
