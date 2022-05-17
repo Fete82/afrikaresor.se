@@ -53,6 +53,16 @@
     
 }
 
+@media only screen and (max-width: 1000px) {
+    .cards-box {
+      flex-direction: column;
+    }
+
+    .card-item {
+        width: 90%;
+    }
+  }
+
 .card-item-image {
     height: 60%;
     display: flex;
