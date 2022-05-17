@@ -85,10 +85,16 @@
 }
 
 .single-container {
-    max-width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.single-content {
+    margin: auto;
+    max-width: 75ch;
     text-align: center;
     justify-content: center;
 }

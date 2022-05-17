@@ -66,3 +66,10 @@ add_action('wp_enqueue_scripts', 'add_theme_scripts');
 /* Custom Post Type Start */
 
 add_theme_support( 'title-tag' );
+
+/*
+function get_comments( $args = '' ) {
+    $query = new WP_Comment_Query;
+    return $query->query( $args );
+}
+*/
