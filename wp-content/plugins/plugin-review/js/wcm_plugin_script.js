@@ -7,8 +7,10 @@ delButton.addEventListener('click', doAjax);
 function doAjax(event) {
     event.preventDefault();
 
-    /* Skapa formulär data som skickas  med fetch request:et.
-    *  Vi skickar alltså bara med action (metoden som ska hantera det) och nonce (csrf) */
+    /*
+    Skapa formulär data som skickas med fetch request:et.
+    *  Vi skickar alltså bara med action (metoden som ska hantera det) och nonce (csrf)
+    */
     let formData = new FormData();
     formData.append('action', "wcm_del_repos_action");
     formData.append('nonce', delButton.getAttribute('data-nonce'));
