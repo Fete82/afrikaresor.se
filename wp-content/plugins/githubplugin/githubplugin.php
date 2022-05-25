@@ -29,6 +29,7 @@ function wcm_plugin_activated()
 
 // [wcm_hello]
 
+/*
 add_shortcode('wcm_hello', 'wcm_says_hello');
 function wcm_says_hello($atts = [], $content = null)
 {
@@ -39,11 +40,13 @@ function wcm_says_hello($atts = [], $content = null)
     $latestPosts = new WP_Query();
     return '<p>HELLO HELLO</p>';
 }
+*/
 
 
 /**
  * Här skapar vi en ny meny i admin.
  */
+/*
 add_action('admin_menu', 'wcm_admin_menu');
 function wcm_admin_menu()
 {
@@ -57,8 +60,9 @@ function wcm_admin_menu()
         20
     );
 }
+*/
 
-/* Vi har extraherat view koden för meny-sidan och inkludera det här */
+/* Vi har extraherat view koden för meny-sidan och inkludera det här 
 function wcm_admin_menu_page()
 {   
     if(isset($_POST['btn_delete'])) {
@@ -73,13 +77,13 @@ function wcm_admin_menu_page()
 
 /**
  * Lägg till settings på vår nya admin sida
- */
+
 function wcm_setttings_init()
 {
     register_setting('wcm_menu', 'wcm_github_token');
 	register_setting('wcm_menu', 'wcm_github_username');
 
-    /* Skapar en settings sektion */
+    /* Skapar en settings sektion 
     add_settings_section(
         'wcm_main_settings',
         'WCM Github Inställningar',
@@ -87,7 +91,7 @@ function wcm_setttings_init()
         'wcm_menu'
     );
 
-    /* Skapar fält för settings */
+    /* Skapar fält för settings 
     add_settings_field(
         'wcm_settings_field',
         'API Nyckel',
@@ -138,3 +142,4 @@ function get_github_user_data()
 {
     wp_remote_get('https://api.github.com/users/lauhakari');
 }
+*/
