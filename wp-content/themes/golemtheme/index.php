@@ -5,7 +5,6 @@ get_header();
 
 ?>
 
-
 <body>
     <div class="p-5 text-center" id="header-box">
         <!-- Header/title -->

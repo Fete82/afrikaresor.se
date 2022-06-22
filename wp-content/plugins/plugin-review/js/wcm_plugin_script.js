@@ -54,3 +54,4 @@ jQuery.ajax( {
 } ).done( function ( response ) {
     console.log( response );
 } );
+console.log('hello');

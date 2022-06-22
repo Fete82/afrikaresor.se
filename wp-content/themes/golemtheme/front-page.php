@@ -28,9 +28,11 @@ get_header();
     <button type="button" class="btn btn-success btn-lg m-4 px-5">Östafrika</button>
     <button type="button" class="btn btn-success btn-lg m-4 px-5">Nordafrika</button>
 </div>
+<!--
 <div>
-    <?php echo do_shortcode("[include_form_shortcode]"); ?>
+    <?php //echo do_shortcode("[include_form_shortcode]"); ?>
 </div>
+-->
 <div class="p-5 " id="search-box">
     <div class="input-group m-auto w-50">
         <input type="search" class="form-control rounded" placeholder="Sök resa" aria-label="Search" aria-describedby="search-addon" />

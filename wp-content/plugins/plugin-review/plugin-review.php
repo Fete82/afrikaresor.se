@@ -33,7 +33,7 @@ function scripts_loader()
     /* registrera scriptet */
     wp_register_script(
         'wcm_plugin_script',
-        plugins_url('/js/wcm_plugin_script.js', __FILE__),
+        plugins_url('plugin-review/js/wcm_plugin_script.js', __FILE__),
         ['jquery'],
         '1.0.0',
         true
