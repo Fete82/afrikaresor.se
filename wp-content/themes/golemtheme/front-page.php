@@ -39,6 +39,9 @@ get_header();
         art_list_travels();
         ?>
     </div>
+    <div>
+        <?php get_post_type_archive_link('ar_travels');?>
+    </div>
 </div>
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
