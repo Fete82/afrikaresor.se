@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WCM21 PLUGIN
-Description: Världens bästa plugin
+Description: Custom Post Type Plugin
 Author: Fete Edvin
 Version: 1.0
 Author URI: http://lindahlweb.se/hasbulla.html

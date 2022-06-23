@@ -13,7 +13,6 @@ get_header();
                 the_post_thumbnail('large'); ?>
 
             </div>
-
             <div>
                 <h1 class="display-3 font-weight-bold bg-success text-light p-2"><?php echo the_title(); ?></h1>
             </div>
@@ -33,8 +32,7 @@ get_header();
                     </div>
                 </div>
             </div>
-
-
+            
 </div>
 
 <?php     }

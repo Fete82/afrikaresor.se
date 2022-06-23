@@ -5,7 +5,6 @@ get_header();
 
 ?>
 <div class="p-5 text-center" id="header-box">
-    <!-- Header/title -->
     <h1 class="display-1 mb-3 mt-5 text-light">
         <?php
         $site_name = get_bloginfo('name');
@@ -13,7 +12,6 @@ get_header();
         echo $site_name;
         ?>
     </h1>
-    <!-- Header/tagline -->
     <h2 class="display-3 mb-5 mt-3 text-light">
         <?php
         $bloginfo = get_bloginfo('description');
