@@ -25,14 +25,11 @@ get_header();
                         <button type="button" class="my-5 btn btn-success btn-lg">Boka resa nu</button>
                     </div>
                     <div class="comments-field" id="comments">
-
-                        <H3>See what others say about this destination:</H2>
-                            <?php comments_template('/comments.php'); ?>
-                            <?php comment_form(); ?>
+                            <?php comments_template('template-parts/comments.php'); ?>
                     </div>
                 </div>
             </div>
-            
+
 </div>
 
 <?php     }
